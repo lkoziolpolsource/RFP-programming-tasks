@@ -1,0 +1,49 @@
+<apex:page id="bookCatalog" sidebar="false" controller="BookCatalogController" tabStyle="Book_Catalog__tab">
+    <head>
+        <apex:includeScript value="https://code.jquery.com/jquery-3.3.1.min.js"/>
+        <script type="application/javascript">
+            function onTranslationChange(){
+                if($("[id*='translation_field']").text() === 'en_US'){
+                    hideMasterBookField();
+                }else{
+                   showMasterBookField()
+                }
+            }
+            function hideMasterBookField(){
+                $("[id*='master_book_field']").parent().prev().hide();
+                $("[id*='master_book_field']").parent().hide();
+            }
+            function showMasterBookField(){
+                $("[id*='master_book_field']").parent().prev().show();
+                $("[id*='master_book_field']").parent().show();
+            }
+            function initPage(){
+                onTranslationChange();
+            }
+        </script>
+    </head>
+    <apex:form >
+        <apex:pageBlock title="{!$Label.Book_Catalog}" mode="detail">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!editBook}" value="{!$Label.Edit}"/>
+                <apex:commandButton action="{!deleteBook}" value="{!$Label.Delete}"/>
+                <apex:commandButton action="{!goBack}" value="{!$Label.Go_Back}" immediate="true"/>
+            </apex:pageBlockButtons>
+            <apex:pageMessages />
+            <apex:pageBlockSection columns="2">
+                <apex:outputField value="{!book.RecordTypeId}" label="{!$Label.Genre}"/>
+                <apex:outputField value="{!book.Master_Book__c}" id="master_book_field"/>
+                <apex:outputField value="{!book.Author__c}"/>
+                <apex:outputField value="{!book.Name}"/>
+                <apex:outputField value="{!book.ISBN__c}"/>
+                <apex:outputField value="{!book.Translation__c}" id="translation_field"/>
+                <apex:outputField value="{!book.Publisher__c}"/>
+                <apex:outputField value="{!book.Year__c}"/>
+                <apex:outputField value="{!book.Description__c}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    <script type="application/javascript">
+        initPage();
+    </script>
+</apex:page>

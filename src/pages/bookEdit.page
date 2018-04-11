@@ -1,0 +1,54 @@
+<apex:page id="bookCatalog" sidebar="false" controller="BookCatalogController" tabStyle="Book_Catalog__tab">
+    <head>
+        <apex:includeScript value="https://code.jquery.com/jquery-3.3.1.min.js"/>
+        <script type="application/javascript">
+            function onTranslationChange(){
+                if($("[id*='translation_field']").val() === 'en_US'){
+                    hideMasterBookField();
+                }else{
+                   showMasterBookField()
+                }
+            }
+            function hideMasterBookField(){
+                $("[id*='master_book_field']").parent().prev().hide();
+                $("[id*='master_book_field']").parent().hide();
+            }
+            function showMasterBookField(){
+                $("[id*='master_book_field']").parent().prev().show();
+                $("[id*='master_book_field']").parent().show();
+            }
+            function initPage(){
+                onTranslationChange();
+            }
+        </script>
+    </head>
+    <apex:form >
+        <apex:pageBlock title="{!$Label.Book_Catalog}" mode="edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!saveBook}" value="{!$Label.Save}"/>
+                <apex:commandButton action="{!deleteBook}" value="{!$Label.Delete}"
+                                    rendered="{!NOT(ISBLANK(book.Id))}"/>
+                <apex:commandButton action="{!goBack}" value="{!$Label.Cancel}" immediate="true"
+                                    rendered="{!ISBLANK(book.Id)}"/>
+                <apex:commandButton action="{!showDetailPage}" value="{!$Label.Cancel}" immediate="true"
+                                    rendered="{!NOT(ISBLANK(book.Id))}"/>
+            </apex:pageBlockButtons>
+            <apex:pageMessages />
+            <apex:pageBlockSection columns="2">
+                <apex:inputField value="{!book.RecordTypeId}" label="{!$Label.Genre}"/>
+                <apex:inputField value="{!book.Master_Book__c}" id="master_book_field"/>
+                <apex:inputField value="{!book.Author__c}"/>
+                <apex:inputField value="{!book.Name}" required="true"/>
+                <apex:inputField value="{!book.ISBN__c}"/>
+                <apex:inputField value="{!book.Translation__c}" onChange="onTranslationChange()"
+                                 id="translation_field"/>
+                <apex:inputField value="{!book.Publisher__c}"/>
+                <apex:inputField value="{!book.Year__c}"/>
+                <apex:inputField value="{!book.Description__c}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    <script type="application/javascript">
+        initPage();
+    </script>
+</apex:page>

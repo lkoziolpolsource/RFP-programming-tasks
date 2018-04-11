@@ -1,0 +1,10 @@
+<apex:page id="bookCatalog" sidebar="false" controller="BookCatalogController" tabStyle="Book_Catalog__tab">
+    <apex:form >
+        <apex:pageblock title="Book Catalog">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!newBook}" value="{!$Label.New}"/>
+                <apex:commandButton action="{!viewBooks}" value="{!$Label.View_Books}"/>
+            </apex:pageBlockButtons>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

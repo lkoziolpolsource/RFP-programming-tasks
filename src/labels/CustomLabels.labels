@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
+        <fullName>Book_Catalog</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Book Catalog</shortDescription>
+        <value>Book Catalog</value>
+    </labels>
+    <labels>
+        <fullName>Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Delete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>Edit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Genre</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Genre</shortDescription>
+        <value>Genre</value>
+    </labels>
+    <labels>
+        <fullName>Go_Back</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Go Back</shortDescription>
+        <value>Go Back</value>
+    </labels>
+    <labels>
         <fullName>Invalid_Country</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -8,10 +50,38 @@
         <value>Please enter a valid ISO country code</value>
     </labels>
     <labels>
+        <fullName>New</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Title</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Title</shortDescription>
+        <value>Title</value>
+    </labels>
+    <labels>
         <fullName>VAT_Number_Required</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>VAT Number Required</shortDescription>
         <value>VAT number is required for European countries</value>
+    </labels>
+    <labels>
+        <fullName>View_Books</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View Books</shortDescription>
+        <value>View Books</value>
     </labels>
 </CustomLabels>

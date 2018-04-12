@@ -1,0 +1,25 @@
+<apex:page sidebar="false" showHeader="false" standardStylesheets="false">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <apex:form >
+    
+        <h2>
+             Add BC content
+        </h2>
+  
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search"/>
+      </div>
+  
+        <span class="align-baseline">
+           <apex:commandButton styleClass=" btn btn-primary" value="New"/>
+           <apex:commandButton styleClass="btn btn-outline-primary" value="View"/>
+        </span>
+        
+    </apex:form>
+    
+    
+    <!--button type="button" class="btn btn-primary">View</button-->
+  
+</apex:page>

@@ -25,7 +25,7 @@
         <name>Go_Back</name>
     </customLabels>
     <customLabels>
-        <label>Por favor ingrese un código de país ISO válido</label>
+        <label><!-- Invalid Country --></label>
         <name>Invalid_Country</name>
     </customLabels>
     <customLabels>
@@ -41,7 +41,7 @@
         <name>Title</name>
     </customLabels>
     <customLabels>
-        <label>Se requiere número de IVA para los países europeos</label>
+        <label><!-- VAT Number Required --></label>
         <name>VAT_Number_Required</name>
     </customLabels>
     <customLabels>

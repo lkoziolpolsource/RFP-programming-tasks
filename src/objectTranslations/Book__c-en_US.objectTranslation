@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Book</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Books</value>
+    </caseValues>
+    <fields>
+        <label><!-- Author --></label>
+        <name>Author__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- ISBN --></label>
+        <name>ISBN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Master --></label>
+        <name>Is_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Book --></label>
+        <name>Master_Book__c</name>
+        <relationshipLabel><!-- Books --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Publisher --></label>
+        <name>Publisher__c</name>
+    </fields>
+    <fields>
+        <label><!-- Translation --></label>
+        <name>Translation__c</name>
+        <picklistValues>
+            <masterLabel>de</masterLabel>
+            <translation><!-- de --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>en_US</masterLabel>
+            <translation><!-- en_US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>es</masterLabel>
+            <translation><!-- es --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fr</masterLabel>
+            <translation><!-- fr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>it</masterLabel>
+            <translation><!-- it --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ja</masterLabel>
+            <translation><!-- ja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sv</masterLabel>
+            <translation><!-- sv --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Genre --></description>
+        <label><!-- Drama --></label>
+        <name>Drama</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Genre --></description>
+        <label><!-- Horror --></label>
+        <name>Horror</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Genre --></description>
+        <label><!-- Mystery --></label>
+        <name>Mystery</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Genre --></description>
+        <label><!-- Romance --></label>
+        <name>Romance</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Genre --></description>
+        <label><!-- Satire --></label>
+        <name>Satire</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Genre --></description>
+        <label><!-- Science Fiction --></label>
+        <name>Science_Fiction</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Genre --></description>
+        <label><!-- Thriller --></label>
+        <name>Thriller</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Valid ISBN has 10 digits --></errorMessage>
+        <name>ISBN_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add master book first before you add translation --></errorMessage>
+        <name>IsMasterRecord</name>
+    </validationRules>
+</CustomObjectTranslation>

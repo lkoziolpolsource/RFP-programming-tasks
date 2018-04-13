@@ -3,7 +3,7 @@
 Book Catalog App + Account validation additional fields like VAT based on Billing, Shipping Country
 
 ## Src  
-* Shor description  of major classes and components
+* Short description  of major classes and components
 
 ``` 
 Book Catalog:
@@ -35,7 +35,7 @@ TriggerHandler.cls - trigger pattern (simplified version)
 
 Pre deployment steps
 
-[Enable translation] (https://help.salesforce.com/articleView?id=customize_wbench.htm&type=5)
+[Enable translation](https://help.salesforce.com/articleView?id=customize_wbench.htm&type=5)
 
 [Enable search](https://help.salesforce.com/articleView?id=search_enhanced_lookup_enable.htm&type=5)
 

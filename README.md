@@ -21,11 +21,11 @@ BookValidator.cls - cointains validation business logic for BC
 
 Fields validation - VAT:
 
-AccountTriggerHandler.cls - trigger handler responsible for business logic
+AccountTriggerHandler.cls - trigger handler which is responsible for business logic
 
-CountriesConfigurationLoader.cls - repsonible for loading configuration for countries from static resource
+CountriesConfigurationLoader.cls - reposnible for loading configuration for countries from static resource
 
-Countries_Configuration.resource - cotains VAT confirugration per country
+Countries_Configuration.resource - contains VAT configuration per country
 
 Shared between apps:
 

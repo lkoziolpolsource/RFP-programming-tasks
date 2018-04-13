@@ -18,7 +18,7 @@
                 $("[id*='master_book_field']").parent().show();
             }
             function initPage(){
-                onTranslationChange();
+               onTranslationChange();
             }
         </script>
     </head>
@@ -36,7 +36,7 @@
                 <apex:outputField value="{!book.Author__c}"/>
                 <apex:outputField value="{!book.Name}"/>
                 <apex:outputField value="{!book.ISBN__c}"/>
-                <apex:outputField value="{!book.Translation__c}" id="translation_field"/>
+                <apex:outputField value="{!book.Translation__c}" id="translation_field" />
                 <apex:outputField value="{!book.Publisher__c}"/>
                 <apex:outputField value="{!book.Year__c}"/>
                 <apex:outputField value="{!book.Description__c}"/>

@@ -11,7 +11,7 @@ public with sharing class BookCatalogController {
         } else {
             this.book = new Book__c();
         }
-        this.book.Translation__c = (String) Book__c.Translation__c.getDescribe().getDefaultValue();
+
         this.isListVisible = false;
     }
 
@@ -116,6 +116,12 @@ public with sharing class BookCatalogController {
     }
 
     public PageReference saveBook() {
+
+        //prevent to keep reference if someone change book on edit to en_US - book become master book itself
+        if ('en_US'.equals(book.Translation__c)){
+            book.Master_Book__c = null;
+        }
+
         try {
             upsert book;
         }

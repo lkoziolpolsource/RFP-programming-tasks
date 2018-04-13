@@ -75,7 +75,6 @@
     </fields>
     <fields>
         <fullName>ISBN__c</fullName>
-        <caseSensitive>false</caseSensitive>
         <externalId>false</externalId>
         <label>ISBN</label>
         <length>10</length>
@@ -83,7 +82,7 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
-        <unique>true</unique>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Is_Master__c</fullName>

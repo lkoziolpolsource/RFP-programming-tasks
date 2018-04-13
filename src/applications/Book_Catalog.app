@@ -3,5 +3,5 @@
     <defaultLandingTab>standard-home</defaultLandingTab>
     <label>Book Catalog</label>
     <logo>Book_Catalog_Docs/PS_Logo.png</logo>
-    <tabs>Book_Catalog</tabs>
+    <tab>Book_Catalog</tab>
 </CustomApplication>

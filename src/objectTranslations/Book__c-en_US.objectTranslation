@@ -70,37 +70,30 @@
         <name>Year__c</name>
     </fields>
     <recordTypes>
-        <description><!-- Genre --></description>
         <label><!-- Drama --></label>
         <name>Drama</name>
     </recordTypes>
     <recordTypes>
-        <description><!-- Genre --></description>
         <label><!-- Horror --></label>
         <name>Horror</name>
     </recordTypes>
     <recordTypes>
-        <description><!-- Genre --></description>
         <label><!-- Mystery --></label>
         <name>Mystery</name>
     </recordTypes>
     <recordTypes>
-        <description><!-- Genre --></description>
         <label><!-- Romance --></label>
         <name>Romance</name>
     </recordTypes>
     <recordTypes>
-        <description><!-- Genre --></description>
         <label><!-- Satire --></label>
         <name>Satire</name>
     </recordTypes>
     <recordTypes>
-        <description><!-- Genre --></description>
         <label><!-- Science Fiction --></label>
         <name>Science_Fiction</name>
     </recordTypes>
     <recordTypes>
-        <description><!-- Genre --></description>
         <label><!-- Thriller --></label>
         <name>Thriller</name>
     </recordTypes>

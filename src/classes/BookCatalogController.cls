@@ -4,8 +4,6 @@ public with sharing class BookCatalogController {
     public string selectedBookId { get; set; }
     public Boolean isListVisible { get; set; }
 
-    private final Book__c stdController;
-
     public BookCatalogController(){
         String bookId = ApexPages.currentPage().getParameters().get('id');
         if (String.isNotBlank(bookId)) {

@@ -35,8 +35,7 @@ TriggerHandler.cls - trigger pattern (simplified version)
 
 Pre deployment steps
 
-[Enable translation] (https://help.salesforce.com/articleView?id=customize_wbench.htm&r=https%3A%2F%2Fwww.google.pl%2F&type=5)
-
+[Enable translation] (https://help.salesforce.com/articleView?id=customize_wbench.htm&type=5)
 
 [Enable search](https://help.salesforce.com/articleView?id=search_enhanced_lookup_enable.htm&type=5)
 

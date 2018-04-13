@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Book_Catalog</application>
+        <default>true</default>
+        <visible>true</visible>
+    </applicationVisibilities>
     <classAccesses>
         <apexClass>AccountTriggerHandler</apexClass>
         <enabled>true</enabled>
@@ -286,10 +291,6 @@
     </objectPermissions>
     <pageAccesses>
         <apexPage>bookCatalog</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>bookCatalogPage</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>

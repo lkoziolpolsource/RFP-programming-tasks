@@ -1,12 +1,16 @@
 <apex:page id="bookCatalog" sidebar="false" controller="BookCatalogController" tabStyle="Book_Catalog__tab">
+
     <apex:form id="book_list">
         <apex:pageblock title="{!$Label.Book_Catalog}">
-            <apex:pageBlockButtons location="top">
+            <apex:pageBlockButtons location="bottom">
                 <apex:commandButton action="{!newBook}" value="{!$Label.New}"/>
             </apex:pageBlockButtons>
             <apex:pageBlockSection >
                 <apex:pageBlockSectionItem >
-                    <apex:outputLabel value="{!$Label.Genre}"/>
+                    <apex:pageMessage severity="INFO" title="{!$Label.Genre_Select}" rendered="{!!isListVisible}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$Label.Genre_Filtering}"/>
                     <apex:selectList value="{!genre}" multiselect="false" size="1">
                         <apex:selectOptions value="{!genres}"/> 
                         <apex:actionsupport event="onchange" action="{!changeCategory}" rerender="book_list"/>

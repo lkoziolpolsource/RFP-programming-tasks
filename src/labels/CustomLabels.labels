@@ -36,6 +36,20 @@
         <value>Genre</value>
     </labels>
     <labels>
+        <fullName>Genre_Filtering</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Choose Genre Filtering</shortDescription>
+        <value>Genre Filtering</value>
+    </labels>
+    <labels>
+        <fullName>Genre_Select</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please select genre</shortDescription>
+        <value>Please select genre</value>
+    </labels>
+    <labels>
         <fullName>Go_Back</fullName>
         <language>en_US</language>
         <protected>true</protected>

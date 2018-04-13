@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- Book Catalog --></label>
+        <name>Book_Catalog</name>
+    </customApplications>
     <customLabels>
         <label><!-- Book Catalog --></label>
         <name>Book_Catalog</name>
@@ -19,6 +23,14 @@
     <customLabels>
         <label><!-- Genre --></label>
         <name>Genre</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Choose Genre Filtering --></label>
+        <name>Genre_Filtering</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please select genre --></label>
+        <name>Genre_Select</name>
     </customLabels>
     <customLabels>
         <label><!-- Go Back --></label>

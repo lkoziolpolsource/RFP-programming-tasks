@@ -5,9 +5,9 @@ public class BookTriggerHandler extends TriggerHandler {
     public override void BeforeDelete(){
             Map<Id, Book__c> booksToRemove = (Map<Id, Book__c>) Trigger.oldMap;
 
-            //remove all children related to master parent book
+            //remove all children related to master parent book + exclude those which are going to be delete in trigger map (necessary for group deletion)
             try{
-                delete [SELECT Id FROM Book__c WHERE Master_Book__c IN :booksToRemove.keySet() AND Is_Master__c != true];
+                delete [SELECT Id FROM Book__c WHERE Master_Book__c IN :booksToRemove.keySet() AND Is_Master__c != true AND Id NOT IN :booksToRemove.keySet()];
             }catch (DmlException ex){
                 booksToRemove.values().get(0).addError('Can\'t delete transalations related to the master book' +ex.getMessage());
             }
